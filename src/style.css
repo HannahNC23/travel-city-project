@@ -1,14 +1,10 @@
 :root {
   --primary-colour: #ffecb4;
-  --section-colour: #e5771e;
+  --section-colour: #1c2e14;
   --text-colour: #5a3d2b;
   --button-colour: #75c8ae;
   --heading-font: "Poppins", serif;
   --standard-font: "Poppins", serif;
-}
-
-body {
-  background-color: var(--section-colour);
 }
 
 h1 {
@@ -70,7 +66,57 @@ header a {
   padding: 16px 32px;
 }
 
-@media (max-width: 900px) {
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+footer {
+  color: #fff;
+  background-image: linear-gradient(
+      rgba(28, 46, 20, 0.8),
+      rgba(28, 46, 20, 0.8)
+    ),
+    url("./images/nottingham-robin-hood-statue.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 40px;
+}
+
+footer h3 {
+  font-family: var(--standard-font);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0 80px 0 0;
+}
+
+footer p {
+  font-family: var(--standard-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 80px 0 0;
+  opacity: 0.8;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: #fff;
+  opacity: 0.7;
+  font-family: var(--standard-font);
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
